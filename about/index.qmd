@@ -39,15 +39,6 @@ resources:
   
 description: |
     <p><img class="about-sns-link" src="/assets/icon/mail-icon.svg" width="16" height="16" alt="Email" /> <b>y_lee10@uncg.edu</b></p>
-    
-
-format:
-  html:
-    include-in-header: |
-      <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
- 
-      
       
 ---
 

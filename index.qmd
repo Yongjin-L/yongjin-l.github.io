@@ -20,7 +20,7 @@ format:
 ::: {#hero-heading}
 
 
-As a physical education educator and researcher, I listen, reflect, and act to advance social and emotional learning through the integration of theory, practice, and innovation.
+As a physical education educator and researcher, I listen, reflect, and act to enhance students' and teachers' experiences through the integration of theory, practice, and innovation.
 
 [Learn more about me &rarr;](/about/index.qmd){.about-links .subtitle}
 
