@@ -14,7 +14,10 @@ website:
       label: utterances
       theme: body-light
       issue-term: title
-      
+
+  #other website options go here
+  google-analytics: G-CTZK0CZZXG
+
   navbar:
     left:
       - text: About
