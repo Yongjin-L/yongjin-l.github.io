@@ -10,7 +10,7 @@ website:
   back-to-top-navigation: false
   comments: 
     utterances: 
-      repo: mroad24.github.io
+      repo: yongjin-l/yongjin-l.github.io
       label: utterances
       theme: body-light
       issue-term: title
