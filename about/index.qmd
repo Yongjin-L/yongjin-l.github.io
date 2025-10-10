@@ -7,7 +7,7 @@ about:
   image: image/yj_profile.JPG
   image-alt: "Professional headshot"
   image-width: 10em
-  image-shape: round
+  image-shape: rectangle
   id: hero-heading
 
 
