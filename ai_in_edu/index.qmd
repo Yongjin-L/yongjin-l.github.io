@@ -20,7 +20,7 @@ resources:
 <div class="card-row">
 <img src="image/ai_in_edu_004.png" class="card-img" alt="AI Teacher Development" />
 <div class="card-text">
-<div class="h2">**Teacher Reflective Practice: AI-powered Automation**</div>
+<div class="h2">**Teacher Reflective Practice: AI-powered Pedagogy**</div>
 
 Professional development integrating AI tools for educators.  
 
