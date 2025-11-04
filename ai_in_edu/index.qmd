@@ -10,8 +10,6 @@ header-includes: >
 resources:
   - ../ai_in_edu/ai-in-edu.css
 ---
-
-<br>
 <!-- start grid -->
 
 <div class="card-list">
@@ -55,6 +53,8 @@ Systematic Literature Review and Second Brain projects with Graph Knowledge usin
 </div>
 </div>
 
+<div class="h2">Teachhing AI in Education</div>
+<img src="image/ai_in_edu_005.png" class="card-img" alt="Potential Courses for AI in Education" />
 
 </div>
 <!-- end grid -->
