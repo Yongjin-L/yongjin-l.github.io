@@ -1,6 +1,6 @@
 ---
 title: "AI in Education"
-subtitle: "Education landscape is evloving with AI. How can we leverage AI to enhance our teaching and learning?"
+subtitle: "How can we leverage AI to enhance our teaching and learning?"
 title-block-banner: false
 
 page-layout: full
@@ -52,6 +52,8 @@ Systematic Literature Review and Second Brain projects with Graph Knowledge usin
 - <a href="https://medium.com/@yongjinL/build-a-second-brain-from-zotero-highlights-with-n8n-and-rag-c761c2887fde" target="_blank" rel="noopener noreferrer">Second Brain</a> 
 </div>
 </div>
+
+<br>
 
 <div class="h2">Teachhing AI in Education</div>
 <img src="image/ai_in_edu_005.png" class="card-img" alt="Potential Courses for AI in Education" />

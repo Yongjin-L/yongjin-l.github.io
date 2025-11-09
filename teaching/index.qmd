@@ -1,6 +1,6 @@
 ---
 title: "Teaching"
-subtitle: "Reflection, Collaboration, and Student-Centered Learning - the heart of education"
+subtitle: "Teaching is my passion and core identity. <br> Reflection, Collaboration, and Student-Centered Learning - the heart of education"
 title-block-banner: false
 
 page-layout: full
@@ -67,7 +67,7 @@ Mar. 2016 - Feb. 2021
 
 ::: {.history-list}
 <div class="h2">Higher Education Teaching </div>
-<div class="h3">University of North Carolina Greensboro (2022 - Present)</div><br>
+<div class="h3">University of North Carolina Greensboro</div><br>
 
 <div class="section-chip"><strong>Courses</strong></div>
 
@@ -75,13 +75,6 @@ Mar. 2016 - Feb. 2021
 Spring 2023, Spring 2024, Spring 2025
 - **HEA 201** Personal Health  
 Fall 2022, Fall 2023, Fall 2024
-- **KIN 110** Ultimate
+- **KIN 110** Ultimate  
 Fall 2022, Spring 2023
-
-<br><div class="section-chip"><strong>Teaching</strong></div>
-
-- **Investigating Social and Emotional Learning using Cooperative Learning as a pedagogical practice in Middle College Physical Education and Health Education**  
-Fall 2024, Spring 2025
-- **Restorative Practices for Educators**  
-Fall 2024
 :::

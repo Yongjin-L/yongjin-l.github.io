@@ -38,19 +38,24 @@ resources:
   - ../about/about.css   
   
 description: |
-    <p><img class="about-sns-link" src="/assets/icon/mail-icon.svg" width="16" height="16" alt="Email" /> <b>y_lee10@uncg.edu</b></p>
+    <p>
+      <a href="mailto:y_lee10@uncg.edu">
+        <img class="about-sns-link" src="/assets/icon/mail-icon.svg" width="16" height="16" alt="Email" />
+      </a>
+    <b>y_lee10@uncg.edu</b>
+    </p>
       
 ---
 
 
 ::: {#hero-heading}
-<div class="h1">Hello! It’s nice to meet you</div>
+<div class="h1">Hello! Nice to meet you.</div>
 <br>
-I **explore, reflect, and create.** 
+I **explore**, **reflect**, and **create**. 
 
-As an educator and researcher, I explore students’ and teachers’ experiences, reflect critically to bridge theory and practice, and create innovative solutions to enrich educational practice. 
+I **explore** students’ and teachers’ experiences, **reflect** critically to bridge theory and practice, and **create** innovative solutions to enrich educational practice. 
 
-My current work focuses on **Developing a holistic physical education program and Integrating AI for education and research**, where I integrate philosophical inquiry, practical pedagogy, and innovative technologies.
+My current work focuses on **Developing a holistic physical education curriculum model and Integrating AI for education and research**, where I integrate philosophical inquiry, practical pedagogy, and innovative technologies.
 
 If your goal is aligned to mine, please feel free to contact me. 
 
@@ -111,7 +116,7 @@ Teacher professionalism in the age of AI
 <!-- end grid -->
 
 
-<br><br>
+<br>
 
 ::: {.education-list}
 
