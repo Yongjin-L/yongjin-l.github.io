@@ -4,7 +4,7 @@ subtitle: Educator • Researcher
 
 about:
   template: trestles
-  image: image/yj_profile.JPG
+  image: image/yj_profile1.JPG
   image-alt: "Professional headshot"
   image-width: 10em
   image-shape: rectangle
