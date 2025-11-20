@@ -66,6 +66,15 @@ Preparing educators for AI-driven educational transformation with focus on equit
 
 :::
 
+::: {.history-list}
+<div class="h2">Theoretical Framework</div>
+
+<img src="/assets/image/SEL_ART.jpg" alt="SEL ART" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;" />
+
+- **Lee, Y.**, & Sneed, P. (2025). Bridging Affective-Reflective Theory and the Social Ecological Model for Effective Social and Emotional Learning in Physical Education. *Strategies*, 1–9. [https://doi.org/10.1080/08924562.2025.2551940](https://doi.org/10.1080/08924562.2025.2551940)
+
+:::
+
 <br>
 
 <div class="btn-container">
