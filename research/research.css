@@ -1,56 +1,85 @@
-
-.h2{
+.h2 {
   border-bottom: none !important;
+  color: #2C3E50;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
-.h3{
+
+.h3 {
   font-family: "Inter" !important;
   margin-top: 0.25rem !important;
-  line-height: 1.25em !important;
-  letter-spacing: -0.05rem !important;
+  line-height: 1.3em !important;
+  letter-spacing: -0.02rem !important;
+  color: #2C3E50;
+  font-weight: 600;
 }
 
 
 .topic-box {
-  background-color: #f7f7f7; /* 첫 번째 영역 배경색 */
-  margin-bottom: 1.5em;        /* 박스 간 간격 */
-  border-radius: 0.5rem; /* 모서리 둥글기 (px 단위, 원하는 값으로 조정 가능) */
-  padding: 2em 8em 2em 4em !important;
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  padding: 2.5rem !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.topic-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.topic-box ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.topic-box li {
+  margin-bottom: 0.5rem;
+  color: #555;
 }
 
 .btn-container {
   display: flex;
-  justify-content: center; /* 수평 중앙 정렬 */
-  margin-top: 2rem;        /* 위쪽 여백 (필요시 조절) */
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .btn-container a.btn-custom {
   font-family: "Inter";
   font-weight: 600;
   font-size: 1.1rem;
-  padding: 0.5em 1.2em;
-  border-radius: 0.25rem;
-  background-color: #343A40; /* 원하는 배경색 */
-  color: white;             /* 글자색 */
+  padding: 0.8em 2em;
+  border-radius: 50px;
+  background-color: #2C3E50;
+  color: white;
   border: none;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 
 .btn-container a.btn-custom:hover {
-  opacity: 0.8; /* 호버 시 색상 */
+  background-color: #000654;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 6, 84, 0.3);
 }
 
 
 /* mobile query up for screens up to ~992px wide */
 @media screen and (max-width: 991.98px) {
   .topic-box {
-    padding: 1em 2em 1em 2em !important;
+    padding: 2rem !important;
   }
-  
+
 }
 
 /* mobile query up for screens up to ~576px wide */
 @media screen and (max-width: 576px) {
-
- 
-  
+  .topic-box {
+    padding: 1.5rem !important;
+  }
 }

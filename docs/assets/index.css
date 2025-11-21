@@ -2,51 +2,75 @@ body {
   overflow-x: hidden;
 }
 
-
-
-/* Quarto about 템플릿 컨테이너 기본 반응형 유지 */
+/* Quarto about template container */
 .quarto-about-jolla {
-  max-width: 100%; /* 템플릿 기본 제한 제거 */
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;  /* 좌우 여백 확보 */
+  padding: 4rem 1rem;
   text-align: center !important;
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0) 0%, rgba(248, 249, 250, 1) 100%);
 }
 
 .entity-contents {
   text-align: center !important;
 }
 
-.quarto-about-jolla .about-image { 
-  background-color: #f7f7f7 !important; /* 원하는 색상으로 수정 */
+.quarto-about-jolla .about-image {
+  background-color: white !important;
+  border: 4px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.quarto-about-joll .about-links { 
-  display: block !important;
+.quarto-about-jolla .about-image:hover {
+  transform: translateY(-5px);
 }
 
-
+.quarto-about-jolla .about-links {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
 /* title */
 .title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.1em !important;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2em !important;
   text-align: center;
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
 }
 
-/* subtitle + Learn More About Me */
+/* subtitle */
 .subtitle {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  color: #000654;
+  margin-bottom: 2rem;
 }
 
+/* Learn More Link Styling */
+.about-links .about-link {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  background-color: white;
+  color: #2C3E50;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
 
-/* center Learn More About Me */
-.about-links.subtitle {
-      justify-content: center !important;
-    }
-
-
+.about-links .about-link:hover {
+  background-color: #000654;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 6, 84, 0.2);
+}
