@@ -5,7 +5,7 @@ project:
 website:
   title: "Yongjin Lee"
   site-url: https://yongjin-l.github.io
-  favicon: assets/image/favicon-48x48.ico
+  favicon: assets/image/favicon.ico
   description: "Educator and researcher creating innovative PE curricula that integrate technology and social-emotional learning to help students and teachers thrive."  
   page-navigation: true
   back-to-top-navigation: false
