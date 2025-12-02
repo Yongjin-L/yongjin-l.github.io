@@ -54,7 +54,6 @@ format:
       - assets/jin-theme.scss
     grid: 
       content-mode: full
-    
     css: styles.css
     toc: true
     lightbox: true
