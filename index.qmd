@@ -1,7 +1,7 @@
 ---
-title: "Yongjin Lee, Ph.D. Candidate"
-pagetitle: Yongjin Lee, Ph.D. Candidate
-subtitle: Educator • Researcher
+title: "Yongjin Lee"
+pagetitle: Yongjin Lee
+subtitle: Ph.D. Candidate • Educator • Researcher
 
 about:
   id: hero-heading
