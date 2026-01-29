@@ -18,7 +18,7 @@ resources:
 <div class="card-row">
 <img src="image/ai_in_edu_004.png" class="card-img" alt="AI Teacher Development" />
 <div class="card-text">
-<div class="h2">**Teacher Reflective Practice: AI-powered Pedagogy**</div>
+<div class="h2">**Teacher Reflective Practice:**<br>**AI-powered Pedagogy**</div>
 
 Professional development integrating AI tools for educators.  
 
@@ -30,7 +30,7 @@ Professional development integrating AI tools for educators.
 <!-- second card -->
 <div class="card-row alt">
 <div class="card-text">
-<div class="h2">**Qualitative Data Analysis: AI-Powered Research Assistant**</div>
+<div class="h2">**Qualitative Data Analysis:**<br>**AI-Powered Research Assistant**</div>
 
 Qualiative research tools integrating AI tools, using Retrieval-Augmented Generation and Topic Modeling. 
 
@@ -44,7 +44,7 @@ Qualiative research tools integrating AI tools, using Retrieval-Augmented Genera
 <div class="card-row">
 <img src="image/ai_in_edu_003.png" class="card-img" alt="Research Innovation" />
 <div class="card-text">
-<div class="h2">**Research Innovation: Graph Knowledge-Enhanced Literature Review**</div>
+<div class="h2">**Research Innovation:**<br>**Graph Knowledge-Enhanced Literature Review**</div>
 
 Systematic Literature Review and Second Brain projects with Graph Knowledge using LightRAG and GraphRAG. 
 
