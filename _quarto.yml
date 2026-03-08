@@ -36,9 +36,9 @@ website:
       - text: CV
         aria-label: "CV"
         href: cv.qmd
-      ##-  text: Projects
-        ##aria-label: "Projects"
-        ##href: projects/index.qmd
+      - text: Interactive CV
+        aria-label: "Interactive CV"
+        href: InteractiveCV/index.qmd
         
         
   page-footer: 

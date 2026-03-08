@@ -1,0 +1,3 @@
+# Use project's .venv for Python (so quarto render finds altair, pandas, etc.)
+# Path is relative to project root when you run quarto render from the project directory.
+QUARTO_PYTHON=.venv/bin/python

@@ -1,0 +1,259 @@
+---
+title: "Interactive CV"
+page-layout: full
+jupyter: website-venv
+---
+This interactive visualization shows my CV with the timeline of my research and publications.
+
+```{python}
+# | echo: false
+# | output: false
+
+import os
+import pandas as pd
+import altair as alt
+
+# Resolve build directory (works both locally and in Quarto render)
+if os.path.isdir("docs"):
+    out_dir = "docs/InteractiveCV"
+elif os.path.isdir("../docs"):
+    out_dir = "../docs/InteractiveCV"
+else:
+    out_dir = "."
+
+os.makedirs(out_dir, exist_ok=True)
+
+# Load data
+df = pd.read_csv("research_data.csv")
+
+# Normalize Link: strip whitespace, treat empty as missing; use "" for href when missing
+df["Link"] = df["Link"].astype(str).str.strip()
+df.loc[df["Link"].isin(["", "nan"]), "Link"] = ""
+df["Link"] = df["Link"].fillna("")
+
+# -----------------------------
+# Derived columns for visualization
+# -----------------------------
+
+# Venue type: Journal vs Conference vs Other
+
+
+def classify_venue(v):
+    if pd.isna(v):
+        return "Other"
+    v = str(v).lower()
+    if "journal" in v or "joperd" in v or "strategies" in v or "sport science" in v or "european" in v or "curriculum studies" in v or "dream&" in v or "woori" in v or "korean journal" in v:
+        return "Journal"
+    if "aera" in v or "aiesep" in v or "shape" in v or "galashow" in v or "pd" in v or "office of education" in v:
+        return "Conference"
+    return "Other"
+
+
+df["venue_type"] = df["venue"].apply(classify_venue)
+
+# Number of authors (collaboration intensity)
+df["authors"] = df["authors"].astype(str)
+df["n_authors"] = df["authors"].str.split(";").str.len().fillna(1).astype(int)
+df["n_authors"] = df["n_authors"].clip(lower=1)
+
+# Has link (DOI or URL)
+df["has_link"] = (df["Link"] != "") & (df["Link"].notna())
+df["has_link"] = df["has_link"].astype(int)  # 0/1 for encoding
+
+# Period: Completed vs Planned (future years)
+current_year = 2025
+df["period"] = df["year"].apply(
+    lambda y: "Planned" if y > current_year else "Completed")
+
+# Unique collaborators for filter (from authors field)
+all_authors = set()
+for a in df["authors"].dropna():
+    for name in str(a).split(";"):
+        name = name.strip()
+        if name:
+            all_authors.add(name)
+collaborator_options = ["All"] + sorted(all_authors)
+
+# Topic order
+topic_order = [
+    "Teacher Education",
+    "Pedagogy",
+    "Assessment",
+    "Social Emotional Learning",
+    "AI in Education",
+]
+df["topic"] = pd.Categorical(df["topic"], categories=topic_order, ordered=True)
+
+# Venue and venue_type options for dropdowns
+venue_options = ["All"] + sorted(df["venue"].dropna().unique().tolist())
+venue_type_options = ["All", "Journal", "Conference", "Other"]
+
+# -----------------------------
+# Shared filter parameters
+# -----------------------------
+
+type_options = ["All", "publication", "presentation"]
+topic_options = ["All"] + \
+    [t for t in topic_order if t in df["topic"].cat.categories]
+role_options = ["All", "Author", "Coauthor", "Presenter"]
+
+type_param = alt.param(value="All", bind=alt.binding_select(
+    options=type_options, name="Output: "), name="type_select")
+topic_param = alt.param(value="All", bind=alt.binding_select(
+    options=topic_options, name="Topic: "), name="topic_select")
+role_param = alt.param(value="All", bind=alt.binding_select(
+    options=role_options, name="Role: "), name="role_select")
+venue_type_param = alt.param(value="All", bind=alt.binding_select(
+    options=venue_type_options, name="Venue type: "), name="venue_type_select")
+venue_param = alt.param(value="All", bind=alt.binding_select(
+    options=venue_options, name="Venue: "), name="venue_select")
+collaborator_param = alt.param(value="All", bind=alt.binding_select(
+    options=collaborator_options, name="Collaborator: "), name="collaborator_select")
+year_min_param = alt.param(value=2018, bind=alt.binding_range(
+    min=2018, max=2026, step=1, name="Year from: "), name="year_min")
+year_max_param = alt.param(value=2026, bind=alt.binding_range(
+    min=2018, max=2026, step=1, name="Year to: "), name="year_max")
+
+# Year brush selection (for bar chart)
+year_brush = alt.selection_interval(encodings=["x"], name="year_brush")
+
+# Hover highlight selection
+hover = alt.selection_point(
+    on="mouseover",
+    fields=["title"],
+    nearest=True,
+    empty=False,
+    name="hover",
+)
+
+# -----------------------------
+# 1. Year summary bar chart (linked selection)
+# -----------------------------
+
+year_counts = df.groupby("year", as_index=False).size().rename(
+    columns={"size": "count"})
+
+year_chart = (
+    alt.Chart(year_counts)
+    .mark_bar(color="steelblue", opacity=0.8)
+    .encode(
+        x=alt.X("year:O", title="Year"),
+        y=alt.Y("count:Q", title="Number of outputs"),
+    )
+    .add_selection(year_brush)
+    .properties(title="Outputs by year (drag to select range)", width=700, height=120)
+)
+
+# -----------------------------
+# 2. Main timeline scatter (hover, filters; fixed point size)
+# -----------------------------
+
+main_chart = (
+    alt.Chart(df)
+    .transform_window(stack_index="row_number()", groupby=["year", "topic"])
+    .mark_point(size=280, filled=True)
+    .encode(
+        x=alt.X("year:O", title="Year"),
+        y=alt.Y(
+            "topic:N",
+            title="Research Area",
+            sort=topic_order,
+            axis=alt.Axis(labelFontSize=16, titleFontSize=14),
+        ),
+        yOffset=alt.YOffset("stack_index:Q"),
+        color=alt.Color("type:N", title="Output Type", legend=None),
+        shape=alt.Shape("role:N", title="Role", legend=None),
+        href=alt.condition(
+            alt.datum.Link != "",
+            alt.Href("Link:N"),
+            alt.value(None),
+        ),
+        opacity=alt.condition(hover, alt.value(1), alt.value(0.35)),
+        stroke=alt.condition(hover, alt.value("black"), alt.value(None)),
+        strokeWidth=alt.condition(hover, alt.value(2), alt.value(0)),
+        tooltip=[
+            alt.Tooltip("title:N", title="Title"),
+            alt.Tooltip("venue:N", title="Venue"),
+            alt.Tooltip("venue_type:N", title="Venue type"),
+            alt.Tooltip("authors:N", title="Authors"),
+            alt.Tooltip("n_authors:Q", title="Number of authors"),
+            alt.Tooltip("role:N", title="Role"),
+            alt.Tooltip("year:Q", title="Year"),
+            alt.Tooltip("type:N", title="Type"),
+            alt.Tooltip("Link:N", title="Link"),
+        ],
+    )
+    .add_selection(hover)
+    .transform_filter("type_select === 'All' || datum.type === type_select")
+    .transform_filter("topic_select === 'All' || datum.topic === topic_select")
+    .transform_filter("role_select === 'All' || datum.role === role_select")
+    .transform_filter("venue_type_select === 'All' || datum.venue_type === venue_type_select")
+    .transform_filter("venue_select === 'All' || datum.venue === venue_select")
+    .transform_filter("collaborator_select === 'All' || indexof(datum.authors, collaborator_select) >= 0")
+    .transform_filter("datum.year >= year_min && datum.year <= year_max")
+    .transform_filter(year_brush)
+    .properties(title="Research timeline", width=700, height=300)
+    .interactive()
+)
+
+# -----------------------------
+# 3. Streamgraph: research trend by year and topic (filtered)
+# -----------------------------
+
+stream_chart = (
+    alt.Chart(df)
+    .transform_filter("type_select === 'All' || datum.type === type_select")
+    .transform_filter("topic_select === 'All' || datum.topic === topic_select")
+    .transform_filter("role_select === 'All' || datum.role === role_select")
+    .transform_filter("venue_type_select === 'All' || datum.venue_type === venue_type_select")
+    .transform_filter("venue_select === 'All' || datum.venue === venue_select")
+    .transform_filter("collaborator_select === 'All' || indexof(datum.authors, collaborator_select) >= 0")
+    .transform_filter("datum.year >= year_min && datum.year <= year_max")
+    .transform_filter(year_brush)
+    .transform_aggregate(count="count()", groupby=["year", "topic"])
+    .encode(
+        x=alt.X("year:O", title="Year"),
+        y=alt.Y("count:Q", title="Outputs", stack="center"),
+        color=alt.Color(
+            "topic:N",
+            title="Research area",
+            sort=topic_order,
+            legend=None,
+        ),
+        tooltip=[
+            alt.Tooltip("year:O", title="Year"),
+            alt.Tooltip("topic:N", title="Research area"),
+            alt.Tooltip("count:Q", title="Count"),
+        ],
+    )
+    .mark_area(opacity=0.8, line=True)
+    .properties(title="Research trend by year (streamgraph)", width=700, height=260)
+)
+
+# -----------------------------
+# Assemble dashboard
+# -----------------------------
+
+dashboard = (
+    alt.vconcat(
+        year_chart,
+        main_chart,
+        stream_chart,
+        spacing=30,
+    )
+    .add_params(type_param, topic_param, role_param, venue_type_param, venue_param, collaborator_param, year_min_param, year_max_param)
+    .resolve_scale(color="independent")
+)
+
+# Save standalone HTML to avoid Quarto RequireJS conflict
+chart_path = os.path.join(out_dir, "chart.html")
+embed_opts = {
+    "renderer": "canvas",
+    "loader": {"target": "_blank"},  # open mark links in new tab
+}
+dashboard.save(chart_path, embed_options=embed_opts)
+```
+
+::: {#research-timeline-chart style="min-height: 1000px;"}
+<iframe src="chart.html" title="Interactive research timeline by year and topic with filters for type, role, venue, and collaborator" style="width: 100%; height: 1180px; border: none;"></iframe>
+:::
