@@ -33,13 +33,12 @@ website:
       - text: AI in Education
         aria-label: "AI in Education"
         href: ai_in_edu/index.qmd
+      - text: Projects
+        aria-label: "Projects"
+        href: projects/index.qmd
       - text: CV
         aria-label: "CV"
-        href: cv.qmd
-      - text: Interactive CV
-        aria-label: "Interactive CV"
-        href: InteractiveCV/index.qmd
-        
+        href: CV/index.qmd
         
   page-footer: 
     center: >-

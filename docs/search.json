@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
+    "objectID": "CV/index.html",
+    "href": "CV/index.html",
     "title": "CV",
     "section": "",
-    "text": "View or download my CV (PDF)   Download PDF file."
+    "text": "View or download my CV (PDF)   Download PDF file.\n \nInteractive CV\nThis interactive visualization shows my CV with the timeline of my research and publications."
   },
   {
     "objectID": "index.html",
@@ -14,11 +14,11 @@
     "text": "I listen, reflect, and act to enhance students’ and teachers’ experiences through the integration of theory, practice, and innovation.\nLearn more about me →"
   },
   {
-    "objectID": "InteractiveCV/index.html",
-    "href": "InteractiveCV/index.html",
-    "title": "Interactive CV",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "This interactive visualization shows my CV with the timeline of my research and publications."
+    "text": "AI-powered Review\n\n\n\nAI-powered Review\n\n\nAn AI-powered academic review assistant for Physical Education research that reads your manuscript and key references to generate journal-style peer review feedback in minutes.\nOpen app\n\n\nAppsScript-for-Educators\n\n\n\nAppsScript-for-Educators\n\n\nA collection of Google Apps Script examples for Google Sheets that helps educators automate classroom workflows, send daily questions, and integrate AI (GPT) directly into their spreadsheets.\nView repository\n\n\nDiscover Your Personal Meaning of Physical Activity\n\n\n\nDiscover Your Personal Meaning of Physical Activity\n\n\nA reflection web app that guides users through a short survey and AI-generated narrative to uncover their unique motivations and personal meaning behind physical activity.\nOpen app\n\n\nCViz\n\n\n\nCViz\n\n\nAn interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.\nOpen app\n\n\nPose Duration Tracker\n\n\n\nPose Duration Tracker\n\n\nAn AI-powered pose tracking tool that uses Teachable Machine models to measure pose durations with real-time feedback, visualizations, session history, and CSV export for deeper analysis.\nOpen app\n\n\n\n\nAI-powered Review\nAn AI-powered academic review assistant for Physical Education research that reads your manuscript and key references to generate journal-style peer review feedback in minutes.\nOpen app\n\n\nAppsScript-for-Educators\nA collection of Google Apps Script examples for Google Sheets that helps educators automate classroom workflows, send daily questions, and integrate AI (GPT) directly into their spreadsheets.\nView repository\n\n\nDiscover Your Personal Meaning of Physical Activity\nA reflection web app that guides users through a short survey and AI-generated narrative to uncover their unique motivations and personal meaning behind physical activity.\nOpen app\n\n\nCViz\nAn interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.\nOpen app\n\n\nPose Duration Tracker\nAn AI-powered pose tracking tool that uses Teachable Machine models to measure pose durations with real-time feedback, visualizations, session history, and CSV export for deeper analysis.\nOpen app"
   },
   {
     "objectID": "research/index.html",

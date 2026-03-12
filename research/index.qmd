@@ -78,7 +78,7 @@ Preparing educators for AI-driven educational transformation with focus on equit
 <br>
 
 <div class="btn-container">
-  <a href="../cv.qmd" class="btn btn-custom">Get More Research Output in CV →</a>
+  <a href="../cv/index.qmd" class="btn btn-custom">Get More Research Output in CV →</a>
 </div>
 
 <!-- end topic box -->

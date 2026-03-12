@@ -1,8 +1,20 @@
 ---
-title: "Interactive CV"
+title: "CV"
 page-layout: full
 jupyter: website-venv
 ---
+
+
+[View or download my CV (PDF)](CV_YongjinLee.pdf)
+<br>
+<br>
+{{< pdf CV_YongjinLee.pdf width=100% height=1000 >}}
+
+<br>
+<br>
+
+**Interactive CV**
+
 This interactive visualization shows my CV with the timeline of my research and publications.
 
 ```{python}
@@ -15,9 +27,9 @@ import altair as alt
 
 # Resolve build directory (works both locally and in Quarto render)
 if os.path.isdir("docs"):
-    out_dir = "docs/InteractiveCV"
+    out_dir = "docs/CV"
 elif os.path.isdir("../docs"):
-    out_dir = "../docs/InteractiveCV"
+    out_dir = "../docs/CV"
 else:
     out_dir = "."
 
