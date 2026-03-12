@@ -35,23 +35,23 @@ A reflection web app that guides users through a short survey and AI-generated n
 :::
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
-### CViz
-
-![CViz](../assets/projectimage/Project5.png){.img-fluid .mb-2}
-
-An interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.
-
-[Open app](https://c-viz.vercel.app/){.btn .btn-outline-primary}
-:::
-
-::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ### Pose Duration Tracker
 
-![Pose Duration Tracker](../assets/projectimage/project4.png){.img-fluid .mb-2}
+![Pose Duration Tracker](../assets/projectimage/Project4.png){.img-fluid .mb-2}
 
 An AI-powered pose tracking tool that uses Teachable Machine models to measure pose durations with real-time feedback, visualizations, session history, and CSV export for deeper analysis.
 
 [Open app](https://mc25.onrender.com/){.btn .btn-outline-primary}
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### CViz
+
+![CViz](../assets/projectimage/project5.png){.img-fluid .mb-2}
+
+An interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.
+
+[Open app](https://c-viz.vercel.app/){.btn .btn-outline-primary}
 :::
 
 :::
