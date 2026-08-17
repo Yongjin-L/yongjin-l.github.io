@@ -1,5 +1,5 @@
 ---
-title: "Yongjin Lee Ph.D. Candidate"
+title: "Dr. Yongjin Lee"
 subtitle: Educator • Researcher 
 
 about:
@@ -39,10 +39,10 @@ resources:
   
 description: |
     <p>
-      <a href="mailto:y_lee10@uncg.edu">
+      <a href="mailto:yolee@adelphi.edu">
         <img class="about-sns-link" src="/assets/icon/mail-icon.svg" width="16" height="16" alt="Email" />
       </a>
-    <b>y_lee10@uncg.edu</b>
+    <b>Contact Me</b>
     </p>
       
 ---
@@ -122,17 +122,17 @@ Teacher professionalism in the age of AI
 
 <div class="h2">Education</div>
 
-- **Ph.D. in Kinesiology** (August 2022 – Present)  
+- **Ph.D. in Kinesiology** (2022–2026)  
 University of North Carolina at Greensboro, Greensboro, NC   
 Concentration: Curriculum and Pedagogy Studies in Physical Education  
 
 
-- **M.S. in Sport Pedagogy** (March 2016 – August 2018)  
+- **M.S. in Sport Pedagogy** (2016–2018)  
 Seoul National University, Seoul, South Korea   
 Concentration: Physical Education 
 
 
-- **B.S. in Physical Education** (March 2007 – February 2013)  
+- **B.S. in Physical Education** (2007–2013)  
 Seoul National University, Seoul, South Korea 
 
 ::: 
