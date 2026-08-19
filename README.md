@@ -3,7 +3,7 @@
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fyongjin-l.github.io)](https://yongjin-l.github.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the personal academic website of **Yongjin Lee, Ph.D. Candidate**, an educator and researcher specializing in physical education, reflective practice, and AI-enhanced education.
+This is the personal academic website of **Dr. Yongjin Lee**, an educator and researcher specializing in physical education, reflective practice, and AI-enhanced education.
 
 🌐 **Live Site**: [https://yongjin-l.github.io](https://yongjin-l.github.io)
 
