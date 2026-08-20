@@ -1,0 +1,35 @@
+---
+title: "Privacy Policy"
+subtitle: "Faculty Time Tracker"
+description: "Privacy policy for Faculty Time Tracker."
+---
+
+This Privacy Policy explains how Faculty Time Tracker handles information when you use the app.
+
+**Effective date:** August 20, 2026
+
+## Information the app uses
+
+- **Google account information:** When you sign in, Firebase Authentication provides basic account details such as your name, email address, and profile image.
+- **Faculty activity records:** The app stores the activities, settings, and semester calendar information that you enter.
+- **Spreadsheet connection details:** The app stores the identifier and URL of your connected Google Sheet so it can load and save your records.
+
+## Where information is stored
+
+Your activity data is stored in the Google Sheet that you create or connect. Profile metadata used to remember that connection is stored in Firebase Firestore. Authentication is provided by Firebase Authentication. The app does not sell your information or use your activity records for advertising.
+
+The app requests access to Google services only to support sign-in and the spreadsheet features you choose to use. Google handles data processed by its services under its own privacy policy.
+
+## Your choices
+
+You can review, edit, or delete activity records in the app or in your connected Google Sheet. You can also disconnect the sheet and revoke the app's Google access through your Google Account settings. Deleting the spreadsheet does not necessarily delete the associated Firebase profile metadata; contact the app owner to request deletion of that metadata.
+
+## Security and retention
+
+Reasonable technical measures are used through Firebase and Google services, but no online service can guarantee absolute security. Information is retained while your account or connected spreadsheet is active, unless you delete it or request its removal.
+
+## Changes and contact
+
+This policy may be updated as the app changes. Questions or deletion requests can be sent to [yolee@adelphi.edu](mailto:yolee@adelphi.edu).
+
+[Return to Faculty Time Tracker](../index.qmd)

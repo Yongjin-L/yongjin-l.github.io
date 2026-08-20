@@ -1,0 +1,85 @@
+---
+title: "Faculty Time Tracker"
+subtitle: "A clear record of the work that keeps academic life moving."
+page-layout: full
+format:
+  html:
+    toc: false
+    css: ../../assets/timetracker.css
+---
+
+::: {.tracker-hero}
+::: {.tracker-hero-copy}
+<div class="tracker-kicker">Faculty workload, made visible</div>
+
+# Faculty Time Tracker
+
+Plan, log, and understand the time you spend on **research**, **teaching**, and **service**.
+
+Faculty Time Tracker is a focused workspace for turning a busy academic week into a useful record. Sign in with Google, connect a Google Sheet that you control, and keep your activity data in one place.
+
+::: {.tracker-actions}
+[Open Faculty Time Tracker](https://faculty-activity-tracker-482431867413.us-west1.run.app/){.btn .btn-primary}
+[Read the privacy policy](privacypolicy/index.qmd){.tracker-text-link}
+:::
+:::
+
+::: {.tracker-hero-panel}
+<div class="tracker-panel-label">Your academic work, at a glance</div>
+<div class="tracker-panel-number">03</div>
+<div class="tracker-panel-caption">core areas to track</div>
+<div class="tracker-panel-list">
+<span>Research</span>
+<span>Teaching</span>
+<span>Service</span>
+</div>
+:::
+:::
+
+::: {.tracker-section}
+<div class="tracker-section-heading">
+<div class="tracker-kicker">Built for the rhythm of faculty work</div>
+## From scattered hours to a useful record
+</div>
+
+::: {.grid .tracker-feature-grid}
+::: {.g-col-12 .g-col-md-4 .tracker-feature}
+<div class="tracker-feature-index">01</div>
+### Log the work
+Capture dates, time ranges, durations, areas, and details while the work is still fresh.
+:::
+
+::: {.g-col-12 .g-col-md-4 .tracker-feature}
+<div class="tracker-feature-index">02</div>
+### See the balance
+Use dashboard summaries and trends to understand how your time is distributed across your academic responsibilities.
+:::
+
+::: {.g-col-12 .g-col-md-4 .tracker-feature}
+<div class="tracker-feature-index">03</div>
+### Report with confidence
+Generate period reports and export your records as PDF or Excel files when you need to review or share them.
+:::
+:::
+:::
+
+<section class="tracker-section tracker-data-section">
+<div class="tracker-kicker">A data store you can understand</div>
+## Your records stay connected to your workflow
+
+The app uses Google Sheets for activities, settings, and semester calendar information. You can create a new sheet or connect an existing one, then open it whenever you want to inspect or manage your records directly.
+
+**Includes**
+
+- Google sign-in
+- Semester-aware activity tracking
+- Faculty workload targets
+- PDF and Excel exports
+- Dashboard summaries and trends
+
+</section>
+
+::: {.tracker-legal-links}
+[Privacy policy](privacypolicy/index.qmd) · [Terms of service](termsofservice/index.qmd)
+:::
+

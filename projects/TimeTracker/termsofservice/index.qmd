@@ -1,0 +1,36 @@
+---
+title: "Terms of Service"
+subtitle: "Faculty Time Tracker"
+description: "Terms of service for Faculty Time Tracker."
+format:
+  html:
+    toc: false
+---
+
+By using Faculty Time Tracker, you agree to these Terms of Service. If you do not agree, do not use the app.
+
+## The service
+
+Faculty Time Tracker helps faculty members record research, teaching, and service activities, review workload summaries, and export reports. The app uses Firebase for authentication and Google Sheets for the data store.
+
+## Your account and data
+
+You are responsible for keeping access to your Google account secure and for the accuracy of the information you enter. You are also responsible for the permissions, sharing settings, and content of any Google Sheet you connect. Do not enter information that you are not authorized to store or process.
+
+## Acceptable use
+
+You agree not to misuse the app, interfere with its operation, attempt unauthorized access, or use it in a way that violates applicable law or the rights of others.
+
+## Availability and third-party services
+
+The app is provided as a convenience and may change, become unavailable, or contain errors. Features that depend on Firebase, Google Sheets, Google Drive, or other third-party services may be affected by those services' availability and policies. Keep your own copies of important records.
+
+## Disclaimer and liability
+
+The app is provided "as is" without warranties of any kind, to the extent permitted by law. Faculty Time Tracker is not a substitute for official institutional workload, payroll, compliance, or recordkeeping systems. To the extent permitted by law, the app owner is not liable for indirect losses or loss of data arising from use of the service.
+
+## Changes and contact
+
+These terms may be updated when the service changes. Continued use after an update means you accept the revised terms. Questions can be sent to [yolee@adelphi.edu](mailto:yolee@adelphi.edu).
+
+[Return to Faculty Time Tracker](../index.qmd)

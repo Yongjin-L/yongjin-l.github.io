@@ -39,10 +39,9 @@ website:
       - text: CV
         aria-label: "CV"
         href: CV/index.qmd
-        
   page-footer: 
     center: >-
-      &#169; 2025 Yongjin Lee &#8729; Made with [Quarto](https://quarto.org)    
+      &#169; 2026 Yongjin Lee &#8729; Made with [Quarto](https://quarto.org)    
    
 
 format:

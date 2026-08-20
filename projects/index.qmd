@@ -5,6 +5,18 @@ title: "Projects"
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+### Faculty Time Tracker
+
+![](../assets/projectimage/Project7.png){.img-fluid .mb-2}
+
+A Faculty Time Tracker that helps faculty members log and analyze their time spent on research, teaching, and service.
+
+[Open homepage](https://yongjin.info/project/timetracker){.btn .btn-outline-primary}
+
+[Open app](https://faculty-activity-tracker-482431867413.us-west1.run.app/){.btn .btn-outline-primary}
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ### Value Orientation Inventory Profile
 
 ![](../assets/projectimage/Project6.png){.img-fluid .mb-2}

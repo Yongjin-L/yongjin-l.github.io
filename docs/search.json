@@ -18,7 +18,56 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Value Orientation Inventory Profile\n\nA Value Orientation Inventory (VOI) profile generator that uses the VOI-SF to generate a profile of the user’s physical education teacher’s values.\nOpen app\n\n\nAI-powered Review\n\nAn AI-powered academic review assistant for Physical Education research that reads your manuscript and key references to generate journal-style peer review feedback in minutes.\nOpen app\n\n\nAppsScript-for-Educators\n\nA collection of Google Apps Script examples for Google Sheets that helps educators automate classroom workflows, send daily questions, and integrate AI (GPT) directly into their spreadsheets.\nView repository\n\n\nDiscover Your Personal Meaning of Physical Activity\n\nA reflection web app that guides users through a short survey and AI-generated narrative to uncover their unique motivations and personal meaning behind physical activity.\nOpen app\n\n\nPose Duration Tracker\n\nAn AI-powered pose tracking tool that uses Teachable Machine models to measure pose durations with real-time feedback, visualizations, session history, and CSV export for deeper analysis.\nOpen app\n\n\nCViz\n\nAn interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.\nOpen app"
+    "text": "Faculty Time Tracker\n\nA Faculty Time Tracker that helps faculty members log and analyze their time spent on research, teaching, and service.\nOpen homepage\nOpen app\n\n\nValue Orientation Inventory Profile\n\nA Value Orientation Inventory (VOI) profile generator that uses the VOI-SF to generate a profile of the user’s physical education teacher’s values.\nOpen app\n\n\nAI-powered Review\n\nAn AI-powered academic review assistant for Physical Education research that reads your manuscript and key references to generate journal-style peer review feedback in minutes.\nOpen app\n\n\nAppsScript-for-Educators\n\nA collection of Google Apps Script examples for Google Sheets that helps educators automate classroom workflows, send daily questions, and integrate AI (GPT) directly into their spreadsheets.\nView repository\n\n\nDiscover Your Personal Meaning of Physical Activity\n\nA reflection web app that guides users through a short survey and AI-generated narrative to uncover their unique motivations and personal meaning behind physical activity.\nOpen app\n\n\nPose Duration Tracker\n\nAn AI-powered pose tracking tool that uses Teachable Machine models to measure pose durations with real-time feedback, visualizations, session history, and CSV export for deeper analysis.\nOpen app\n\n\nCViz\n\nAn interactive CV visualizer that transforms static academic CVs into rich research narratives with themes, timelines, publication lists, and a citation-style network map.\nOpen app"
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html",
+    "href": "projects/TimeTracker/privacypolicy/index.html",
+    "title": "Privacy Policy",
+    "section": "",
+    "text": "This Privacy Policy explains how Faculty Time Tracker handles information when you use the app.\nEffective date: August 20, 2026"
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html#information-the-app-uses",
+    "href": "projects/TimeTracker/privacypolicy/index.html#information-the-app-uses",
+    "title": "Privacy Policy",
+    "section": "Information the app uses",
+    "text": "Information the app uses\n\nGoogle account information: When you sign in, Firebase Authentication provides basic account details such as your name, email address, and profile image.\nFaculty activity records: The app stores the activities, settings, and semester calendar information that you enter.\nSpreadsheet connection details: The app stores the identifier and URL of your connected Google Sheet so it can load and save your records."
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html#where-information-is-stored",
+    "href": "projects/TimeTracker/privacypolicy/index.html#where-information-is-stored",
+    "title": "Privacy Policy",
+    "section": "Where information is stored",
+    "text": "Where information is stored\nYour activity data is stored in the Google Sheet that you create or connect. Profile metadata used to remember that connection is stored in Firebase Firestore. Authentication is provided by Firebase Authentication. The app does not sell your information or use your activity records for advertising.\nThe app requests access to Google services only to support sign-in and the spreadsheet features you choose to use. Google handles data processed by its services under its own privacy policy."
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html#your-choices",
+    "href": "projects/TimeTracker/privacypolicy/index.html#your-choices",
+    "title": "Privacy Policy",
+    "section": "Your choices",
+    "text": "Your choices\nYou can review, edit, or delete activity records in the app or in your connected Google Sheet. You can also disconnect the sheet and revoke the app’s Google access through your Google Account settings. Deleting the spreadsheet does not necessarily delete the associated Firebase profile metadata; contact the app owner to request deletion of that metadata."
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html#security-and-retention",
+    "href": "projects/TimeTracker/privacypolicy/index.html#security-and-retention",
+    "title": "Privacy Policy",
+    "section": "Security and retention",
+    "text": "Security and retention\nReasonable technical measures are used through Firebase and Google services, but no online service can guarantee absolute security. Information is retained while your account or connected spreadsheet is active, unless you delete it or request its removal."
+  },
+  {
+    "objectID": "projects/TimeTracker/privacypolicy/index.html#changes-and-contact",
+    "href": "projects/TimeTracker/privacypolicy/index.html#changes-and-contact",
+    "title": "Privacy Policy",
+    "section": "Changes and contact",
+    "text": "Changes and contact\nThis policy may be updated as the app changes. Questions or deletion requests can be sent to yolee@adelphi.edu.\nReturn to Faculty Time Tracker"
+  },
+  {
+    "objectID": "ai_in_edu/index.html",
+    "href": "ai_in_edu/index.html",
+    "title": "AI in Education",
+    "section": "",
+    "text": "Teacher Reflective Practice:AI-powered Pedagogy\n\nProfessional development integrating AI tools for educators.\n\nMake Workflows\nApps Scripts for Google Applications\n\n\n\n\n\n\n\nQualitative Data Analysis:AI-Powered Research Assistant\n\nQualiative research tools integrating AI tools, using Retrieval-Augmented Generation and Topic Modeling.\n\nRAG for data analysis\nTopic Modeling\n\n\n\n\n\n\n\n\n\nResearch Innovation:Graph Knowledge-Enhanced Literature Review\n\nSystematic Literature Review and Second Brain projects with Graph Knowledge using LightRAG and GraphRAG.\n\nLightRAG\nSecond Brain\n\n\n\n\n\nTeachhing AI in Education"
   },
   {
     "objectID": "research/index.html",
@@ -28,11 +77,74 @@
     "text": "Research Interest\n\n\n\n\n\nPhysical Education for Holistic Student Development\n\nDeveloping holistic physical education programs for all students.\n\nHumanitas-oriented education\nSocial and emotional learning\nModel-based practices\n\n\n\n\nAI-Enhanced Educational Research\n\nDeveloping novel AI-powered methods to analyze and enrich complex educational data while preserving interpretive nuance\n\nAI-enhanced self-study research frameworks\nRetrieval-Augmented Generation for qualitative data analysis\nGraph knowledge for systematic review\n\n\n\n\nEthical AI Integration in Teacher Education\n\nPreparing educators for AI-driven educational transformation with focus on equity, ethics, and community engagement\n\nTeacher professionalism in the age of AI\nAI-powered simulations for teaching practice\nPersonalized professional development pathways using AI analysis\n\n\n\n\n\nSelected Research Output\n\n\nLee, Y., Kim, Y., Min, H., & Lee, W. (2026) How are critical friends utilized? A systematic review of self-study in physical education teacher education. Quest, Ahead of print. 1–19. https://doi.org/10.1080/00336297.2026.2642801. \nLee, Y., & Dyson, B. (2025). AI enhances, not outdates, self-study research: A practical guide tointegrating AI into research methodology, Journal of Teaching Physical Education, Online first. https://doi.org/10.1123/jtpe.2024-0417\nLee, Y., & Kim, D. (2025). Evolving professionalism in the AI era: A case and discussion ofimplementing generative AI in PE. Journal of Physical Education, Recreation & Dance, 96(3), 8-13. https://doi.org/10.1080/07303084.2024.2444586\nLee, Y., Chu, T. L. (Alan), & Dyson, B. (2025). Nurturing Inner Strength: Teaching Self-Compassion in Physical Education. Journal of Physical Education, Recreation & Dance, 96(8), 7–13. http://doi.org/10.1080/07303084.2025.2533145\n\n\n\n\nGet More Research Output in CV →"
   },
   {
-    "objectID": "ai_in_edu/index.html",
-    "href": "ai_in_edu/index.html",
-    "title": "AI in Education",
+    "objectID": "projects/TimeTracker/index.html",
+    "href": "projects/TimeTracker/index.html",
+    "title": "Faculty Time Tracker",
     "section": "",
-    "text": "Teacher Reflective Practice:AI-powered Pedagogy\n\nProfessional development integrating AI tools for educators.\n\nMake Workflows\nApps Scripts for Google Applications\n\n\n\n\n\n\n\nQualitative Data Analysis:AI-Powered Research Assistant\n\nQualiative research tools integrating AI tools, using Retrieval-Augmented Generation and Topic Modeling.\n\nRAG for data analysis\nTopic Modeling\n\n\n\n\n\n\n\n\n\nResearch Innovation:Graph Knowledge-Enhanced Literature Review\n\nSystematic Literature Review and Second Brain projects with Graph Knowledge using LightRAG and GraphRAG.\n\nLightRAG\nSecond Brain\n\n\n\n\n\nTeachhing AI in Education"
+    "text": "Faculty workload, made visible\n\n\n\nPlan, log, and understand the time you spend on research, teaching, and service.\nFaculty Time Tracker is a focused workspace for turning a busy academic week into a useful record. Sign in with Google, connect a Google Sheet that you control, and keep your activity data in one place.\n\nOpen Faculty Time Tracker Read the privacy policy\n\n\n\n\n\nYour academic work, at a glance\n\n\n03\n\n\ncore areas to track\n\n\nResearch Teaching Service"
+  },
+  {
+    "objectID": "projects/TimeTracker/index.html#from-scattered-hours-to-a-useful-record",
+    "href": "projects/TimeTracker/index.html#from-scattered-hours-to-a-useful-record",
+    "title": "Faculty Time Tracker",
+    "section": "From scattered hours to a useful record",
+    "text": "From scattered hours to a useful record"
+  },
+  {
+    "objectID": "projects/TimeTracker/index.html#your-records-stay-connected-to-your-workflow",
+    "href": "projects/TimeTracker/index.html#your-records-stay-connected-to-your-workflow",
+    "title": "Faculty Time Tracker",
+    "section": "Your records stay connected to your workflow",
+    "text": "Your records stay connected to your workflow\nThe app uses Google Sheets for activities, settings, and semester calendar information. You can create a new sheet or connect an existing one, then open it whenever you want to inspect or manage your records directly.\nIncludes\n\nGoogle sign-in\nSemester-aware activity tracking\nFaculty workload targets\nPDF and Excel exports\nDashboard summaries and trends"
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html",
+    "href": "projects/TimeTracker/termsofservice/index.html",
+    "title": "Terms of Service",
+    "section": "",
+    "text": "By using Faculty Time Tracker, you agree to these Terms of Service. If you do not agree, do not use the app."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#the-service",
+    "href": "projects/TimeTracker/termsofservice/index.html#the-service",
+    "title": "Terms of Service",
+    "section": "The service",
+    "text": "The service\nFaculty Time Tracker helps faculty members record research, teaching, and service activities, review workload summaries, and export reports. The app uses Firebase for authentication and Google Sheets for the data store."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#your-account-and-data",
+    "href": "projects/TimeTracker/termsofservice/index.html#your-account-and-data",
+    "title": "Terms of Service",
+    "section": "Your account and data",
+    "text": "Your account and data\nYou are responsible for keeping access to your Google account secure and for the accuracy of the information you enter. You are also responsible for the permissions, sharing settings, and content of any Google Sheet you connect. Do not enter information that you are not authorized to store or process."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#acceptable-use",
+    "href": "projects/TimeTracker/termsofservice/index.html#acceptable-use",
+    "title": "Terms of Service",
+    "section": "Acceptable use",
+    "text": "Acceptable use\nYou agree not to misuse the app, interfere with its operation, attempt unauthorized access, or use it in a way that violates applicable law or the rights of others."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#availability-and-third-party-services",
+    "href": "projects/TimeTracker/termsofservice/index.html#availability-and-third-party-services",
+    "title": "Terms of Service",
+    "section": "Availability and third-party services",
+    "text": "Availability and third-party services\nThe app is provided as a convenience and may change, become unavailable, or contain errors. Features that depend on Firebase, Google Sheets, Google Drive, or other third-party services may be affected by those services’ availability and policies. Keep your own copies of important records."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#disclaimer-and-liability",
+    "href": "projects/TimeTracker/termsofservice/index.html#disclaimer-and-liability",
+    "title": "Terms of Service",
+    "section": "Disclaimer and liability",
+    "text": "Disclaimer and liability\nThe app is provided “as is” without warranties of any kind, to the extent permitted by law. Faculty Time Tracker is not a substitute for official institutional workload, payroll, compliance, or recordkeeping systems. To the extent permitted by law, the app owner is not liable for indirect losses or loss of data arising from use of the service."
+  },
+  {
+    "objectID": "projects/TimeTracker/termsofservice/index.html#changes-and-contact",
+    "href": "projects/TimeTracker/termsofservice/index.html#changes-and-contact",
+    "title": "Terms of Service",
+    "section": "Changes and contact",
+    "text": "Changes and contact\nThese terms may be updated when the service changes. Continued use after an update means you accept the revised terms. Questions can be sent to yolee@adelphi.edu.\nReturn to Faculty Time Tracker"
   },
   {
     "objectID": "about/index.html",
