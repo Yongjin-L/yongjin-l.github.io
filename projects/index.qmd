@@ -11,7 +11,7 @@ title: "Projects"
 
 A Faculty Time Tracker that helps faculty members log and analyze their time spent on research, teaching, and service.
 
-[Open homepage](https://yongjin.info/project/timetracker){.btn .btn-outline-primary}
+[Open homepage](TimeTracker/index.qmd){.btn .btn-outline-primary}
 
 [Open app](https://faculty-activity-tracker-482431867413.us-west1.run.app/){.btn .btn-outline-primary}
 :::

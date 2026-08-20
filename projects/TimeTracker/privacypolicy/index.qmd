@@ -2,6 +2,9 @@
 title: "Privacy Policy"
 subtitle: "Faculty Time Tracker"
 description: "Privacy policy for Faculty Time Tracker."
+format:
+  html:
+    toc: false
 ---
 
 This Privacy Policy explains how Faculty Time Tracker handles information when you use the app.

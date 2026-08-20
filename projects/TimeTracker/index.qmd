@@ -20,13 +20,12 @@ Faculty Time Tracker is a focused workspace for turning a busy academic week int
 
 ::: {.tracker-actions}
 [Open Faculty Time Tracker](https://faculty-activity-tracker-482431867413.us-west1.run.app/){.btn .btn-primary}
-[Read the privacy policy](privacypolicy/index.qmd){.tracker-text-link}
 :::
 :::
 
 ::: {.tracker-hero-panel}
-<div class="tracker-panel-label">Your academic work, at a glance</div>
-<div class="tracker-panel-number">03</div>
+<div class="tracker-panel-label">Your academic work</div>
+<div class="tracker-panel-number">3</div>
 <div class="tracker-panel-caption">core areas to track</div>
 <div class="tracker-panel-list">
 <span>Research</span>
