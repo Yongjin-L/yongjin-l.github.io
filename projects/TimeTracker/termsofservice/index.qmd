@@ -31,6 +31,6 @@ The app is provided "as is" without warranties of any kind, to the extent permit
 
 ## Changes and contact
 
-These terms may be updated when the service changes. Continued use after an update means you accept the revised terms. Questions can be sent to [yolee@adelphi.edu](mailto:yolee@adelphi.edu).
+These terms may be updated when the service changes. Continued use after an update means you accept the revised terms. Questions can be sent to [jin946512@gmail.com](mailto:jin946512@gmail.com).
 
 [Return to Faculty Time Tracker](../index.qmd)
