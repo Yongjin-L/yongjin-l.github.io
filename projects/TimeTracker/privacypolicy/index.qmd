@@ -9,30 +9,100 @@ format:
 
 This Privacy Policy explains how Faculty Time Tracker handles information when you use the app.
 
-**Effective date:** August 20, 2026
+# Faculty Activity Tracker Privacy Policy
 
-## Information the app uses
+**Effective date: August 22, 2026**
 
-- **Google account information:** When you sign in, Firebase Authentication provides basic account details such as your name, email address, and profile image.
-- **Faculty activity records:** The app stores the activities, settings, and semester calendar information that you enter.
-- **Spreadsheet connection details:** The app stores the identifier and URL of your connected Google Sheet so it can load and save your records.
+Faculty Activity Tracker is a personal workload and time-tracking application operated by Yongjin Lee. This policy explains what information the application accesses, how it is used, when it is shared, and the choices available to you.
 
-## Where information is stored
+## Information We Access
 
-Your activity data is stored in the Google Sheet that you create or connect. Profile metadata used to remember that connection is stored in Firebase Firestore. Authentication is provided by Firebase Authentication. The app does not sell your information or use your activity records for advertising.
+When you sign in with Google, the application receives the Google account information needed to authenticate you, including your Google account identifier, email address, display name, and an access token for the permissions you approve.
 
-The app requests access to Google services only to support sign-in and the spreadsheet features you choose to use. Google handles data processed by its services under its own privacy policy.
+When you create or explicitly select a Google Sheet through Google Picker, the application accesses the selected spreadsheet and its application-managed content. This can include:
 
-## Your choices
+- Spreadsheet title and identifier.
+- Activity records, including dates, activity areas, start and end times, duration, and descriptions.
+- Faculty settings, workload targets, institution and department fields, and academic-year and semester dates.
 
-You can review, edit, or delete activity records in the app or in your connected Google Sheet. You can also disconnect the sheet and revoke the app's Google access through your Google Account settings. Deleting the spreadsheet does not necessarily delete the associated Firebase profile metadata; contact the app owner to request deletion of that metadata.
+The application requests the following Google OAuth scope:
 
-## Security and retention
+- `https://www.googleapis.com/auth/drive.file` - permits access to files that the application creates or that you explicitly select for use with the application. The application does not list or scan all of your Google Drive files.
 
-Reasonable technical measures are used through Firebase and Google services, but no online service can guarantee absolute security. Information is retained while your account or connected spreadsheet is active, unless you delete it or request its removal.
+The application uses Google Sheets API operations on the selected file to create or initialize the `Activities`, `Settings`, and `Semesters` tabs, read their values, add or update activity records, delete activity rows, and save settings and semester data.
+
+## How We Use Information
+
+We use this information only to:
+
+- Sign you in and maintain your application session.
+- Create or connect the workload spreadsheet you choose.
+- Display dashboards, activity history, workload calculations, and reports.
+- Save changes that you request to the selected spreadsheet.
+- Generate PDF and Excel reports in your browser when you request an export.
+- Remember which spreadsheet you connected when you return to the application.
+
+PDF and Excel exports are generated locally in your browser. The application does not upload those exported files to a separate service.
+
+## Firebase Processing
+
+The application uses Firebase Authentication to provide Google sign-in and Firebase Cloud Firestore to store limited application metadata. Firestore may store your Google account identifier, email address, display name, last-login timestamp, connected spreadsheet identifier and title, and last-sync timestamp.
+
+Firestore security rules restrict user profile metadata to the authenticated user associated with that profile. Spreadsheet activity records and settings remain in the Google Sheet in your Google account rather than in Firestore.
+
+Firebase and Google may process this information as infrastructure and service providers to operate authentication, database, hosting, and API services. Their processing is subject to their applicable terms and privacy policies.
+
+## Sharing and Disclosure
+
+We do not sell, rent, or otherwise monetize Google user data. We do not share Google user data with advertisers, data brokers, or unrelated third parties.
+
+Information may be disclosed only:
+
+- To Google and Firebase services required to authenticate you, store limited application metadata, host the application, and provide the Google Sheets and Picker APIs.
+- When you intentionally open or share your Google Sheet using Google Drive or Google Sheets controls.
+- When required by law, legal process, or to protect the rights, safety, and security of the application or its users.
+- With service providers acting on our behalf under confidentiality and data-protection obligations, if such providers are needed to operate the application.
+
+## No AI or Machine Learning Use
+
+The application does not use generative AI, machine-learning models, AI gateways, model aggregators, or third-party AI services to process Google Workspace data. Raw, aggregated, anonymized, or derived data obtained through Google APIs is not transferred to an AI provider and is not used to create, train, or improve generalized AI or machine-learning models.
+
+The use of raw or derived user data received from Workspace APIs adheres to the Google User Data Policy, including the Limited Use requirements.
+
+## Retention
+
+Your activity records, settings, and semester configuration are retained in your selected Google Sheet until you edit or delete them. The Google Sheet is owned and controlled through your Google account; the application does not delete the Sheet when you disconnect it.
+
+The application retains limited Firestore account and spreadsheet-link metadata while your account uses the application. When you disconnect a spreadsheet, the application removes the stored spreadsheet identifier, title, and last-sync metadata and clears the local browser link. When you sign out, the in-memory access token is cleared. Google may retain information under Google's own policies.
+
+Locally generated exports remain wherever you choose to save or download them. Delete those files from your device when they are no longer needed.
+
+## Your Choices and Deletion Requests
+
+You can:
+
+- Edit or delete activity records directly in the application or Google Sheet.
+- Disconnect a spreadsheet in the application. Disconnecting removes the application link only and does not delete the Sheet or its contents.
+- Sign out of the application.
+- Revoke the application's Google account access through your Google Account security settings.
+- Delete the Google Sheet or downloaded exports yourself.
+
+For help removing application metadata or exercising a privacy request, contact the developer through the support page: <https://yongjin.info/projects/TimeTracker/>. Requests may require reasonable verification of account ownership. Removing the Google Sheet or revoking Google access does not automatically delete copies or exports you retained outside the application.
+
+## Security
+
+The application uses Firebase Authentication, user-scoped Firestore rules, HTTPS-hosted services, and short-lived access tokens held in browser memory for Google API requests. No private OAuth client secret or Google service-account credential is stored in the browser application. No internet service can guarantee absolute security, so protect your Google account and downloaded files.
+
+## Children's Privacy
+
+The application is intended for adult faculty and professional users and is not directed to children under 13. We do not knowingly collect personal information from children under 13.
+
+## Changes to This Policy
+
+This policy may be updated when the application, its data practices, or applicable requirements change. The effective date above will be updated when material changes are published.
 
 ## Changes and contact
 
-This policy may be updated as the app changes. Questions or deletion requests can be sent to [yolee@adelphi.edu](mailto:yolee@adelphi.edu).
+This policy may be updated as the app changes. Questions or deletion requests can be sent to [jin946512@gmail.com](mailto:jin946512@gmail.com).
 
 [Return to Faculty Time Tracker](../index.qmd)
