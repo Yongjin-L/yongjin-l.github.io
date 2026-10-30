@@ -1,6 +1,6 @@
 ---
 title: "Yongjin Lee"
-pagetitle: Dr. Yongjin Lee
+pagetitle: Home
 subtitle: Physical Educator • Researcher
 
 about:
